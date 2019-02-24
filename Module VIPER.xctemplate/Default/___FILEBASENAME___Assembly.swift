@@ -12,16 +12,21 @@ import UIKit
 final class ___VARIABLE_productName:identifier___Assembly
 {
 
-    func build() -> UIViewController{
-        let viewController = ___VARIABLE_productName:identifier___ViewController()
-        let presenter = ___VARIABLE_productName:identifier___Presenter(view: viewController)
-        let interactor = ___VARIABLE_productName:identifier___Interactor(presenter: presenter)
-        let router = ___VARIABLE_productName:identifier___Router(viewController: viewController)
-        
-        viewController.presenter = presenter
-        presenter.interactor = interactor
-        presenter.router = router
+	func build() -> UIViewController {
+		let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+		guard let viewController = storyBoard.instantiateViewController(withIdentifier: "___VARIABLE_productName:identifier___ViewController") as? ___VARIABLE_productName:identifier___ViewController else {
+			return UIViewController()
+		}
+//		let viewController = ___VARIABLE_productName:identifier___ViewController()
+		let interactor = ___VARIABLE_productName:identifier___Interactor()
+		let router = ___VARIABLE_productName:identifier___Router(viewController: viewController)
+		let presenter = ___VARIABLE_productName:identifier___Presenter(view: viewController,
+		interactor: interactor,
+		router: router)
 
-        return viewController
-    }
+		viewController.presenter = presenter
+		interactor.presenter = presenter
+
+		return viewController
+	}
 }

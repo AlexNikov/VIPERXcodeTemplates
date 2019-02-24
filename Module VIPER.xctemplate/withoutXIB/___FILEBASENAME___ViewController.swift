@@ -12,12 +12,12 @@ import UIKit
 final class ___VARIABLE_productName:identifier___ViewController: UIViewController
 {
 
-	var presenter: ___VARIABLE_productName:identifier___Presenter!
+	var presenter: ___VARIABLE_productName:identifier___Presenter?
 
-    // MARK: - Lifecycle methods
-    
+	// MARK: - Lifecycle methods
+
 	override func viewDidLoad() {
-        super.viewDidLoad()
-        presenter.configureView()
-    }
+		super.viewDidLoad()
+		presenter?.configureView()
+	}
 }

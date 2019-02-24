@@ -10,9 +10,5 @@
 final class ___VARIABLE_productName:identifier___Interactor
 {
 
-    weak var presenter: ___VARIABLE_productName:identifier___Presenter?
-    
-    required init(presenter: ___VARIABLE_productName:identifier___Presenter) {
-        self.presenter = presenter
-    }
+	weak var presenter: ___VARIABLE_productName:identifier___Presenter?
 }

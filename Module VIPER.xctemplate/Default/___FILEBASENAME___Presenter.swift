@@ -10,15 +10,19 @@
 final class ___VARIABLE_productName:identifier___Presenter
 {
 
-    weak private var view: ___VARIABLE_productName:identifier___ViewController?
-    var interactor: ___VARIABLE_productName:identifier___Interactor?
-    var router: ___VARIABLE_productName:identifier___Router!
+	private weak var view: ___VARIABLE_productName:identifier___ViewController?
+	private var interactor: ___VARIABLE_productName:identifier___Interactor
+	private var router: ___VARIABLE_productName:identifier___Router
 
-    init(view: ___VARIABLE_productName:identifier___ViewController) {
-        self.view = view
-    }
+	init(view: ___VARIABLE_productName:identifier___ViewController,
+		interactor: ___VARIABLE_productName:identifier___Interactor,
+		router: ___VARIABLE_productName:identifier___Router) {
+		self.view = view
+		self.interactor = interactor
+		self.router = router
+	}
 
-    func configureView() {
-        
-    }
+	func configureView() {
+
+	}
 }
