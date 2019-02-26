@@ -9,7 +9,6 @@
 
 final class ___VARIABLE_productName:identifier___Presenter
 {
-
 	private weak var view: ___VARIABLE_productName:identifier___ViewController?
 	private var interactor: ___VARIABLE_productName:identifier___Interactor
 	private var router: ___VARIABLE_productName:identifier___Router

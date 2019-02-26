@@ -11,8 +11,7 @@ import UIKit
 
 final class ___VARIABLE_productName:identifier___Router
 {
-
-	weak var viewController: UIViewController?
+	private weak var viewController: UIViewController?
 
 	init(viewController: ___VARIABLE_productName:identifier___ViewController) {
 		self.viewController = viewController

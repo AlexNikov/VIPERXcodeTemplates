@@ -9,6 +9,5 @@
 
 final class ___VARIABLE_productName:identifier___Interactor
 {
-
 	weak var presenter: ___VARIABLE_productName:identifier___Presenter?
 }

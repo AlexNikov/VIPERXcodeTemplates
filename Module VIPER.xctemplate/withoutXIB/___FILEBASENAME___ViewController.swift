@@ -11,7 +11,6 @@ import UIKit
 
 final class ___VARIABLE_productName:identifier___ViewController: UIViewController
 {
-
 	var presenter: ___VARIABLE_productName:identifier___Presenter?
 
 	// MARK: - Lifecycle methods
