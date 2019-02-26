@@ -11,7 +11,7 @@ import UIKit
 
 final class ___VARIABLE_productName:identifier___Assembly
 {
-	func build() -> UIViewController {
+	func build() -> (vc: UIViewController, presenter: ___VARIABLE_productName:identifier___Presenter) {
 		let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
 		guard let viewController = storyBoard.instantiateViewController(withIdentifier: "___VARIABLE_productName:identifier___ViewController") as? ___VARIABLE_productName:identifier___ViewController else {
 			fatalError()
@@ -26,6 +26,6 @@ final class ___VARIABLE_productName:identifier___Assembly
 		viewController.presenter = presenter
 		interactor.presenter = presenter
 
-		return viewController
+		return (viewController, presenter)
 	}
 }

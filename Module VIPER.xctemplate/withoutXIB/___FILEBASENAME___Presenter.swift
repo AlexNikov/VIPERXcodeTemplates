@@ -20,8 +20,16 @@ final class ___VARIABLE_productName:identifier___Presenter
 		self.interactor = interactor
 		self.router = router
 	}
+}
 
+// MARK: View
+extension ___VARIABLE_productName:identifier___Presenter
+{
 	func configureView() {
-
 	}
+}
+
+// MARK: Interactor
+extension ___VARIABLE_productName:identifier___Presenter
+{
 }
