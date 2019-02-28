@@ -6,37 +6,39 @@
 	<array>
 		<string>public.swift-source</string>
 	</array>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>Module VIPER</string>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>DefaultCompletionName</key>
+	<string>Module VIPER</string>
 	<key>Platforms</key>
 	<array>
 		<string>com.apple.platform.iphoneos</string>
 	</array>
-	<key>DefaultCompletionName</key>
-	<string>SwiftViperModule</string>
-	<key>Description</key>
-	<string>Basic Swift VIPER module template. Creates View, Interactor, Presenter, Router with protocols.</string>
-	<key>Kind</key>
-	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
-	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___</string>
-	<key>SortOrder</key>
-	<integer>1</integer>
 	<key>Options</key>
 	<array>
 		<dict>
 			<key>Description</key>
-			<string>Name of module that you need create</string>
-			<key>Default</key>
-			<string></string>
+			<string>The name of the module to create</string>
 			<key>Identifier</key>
 			<string>moduleName</string>
 			<key>Name</key>
-			<string>Module name</string>
+			<string>New Module Name:</string>
+			<key>NotPersisted</key>
+			<true/>
 			<key>Required</key>
-			<string>YES</string>
+			<true/>
 			<key>Type</key>
 			<string>text</string>
 		</dict>
 		<dict>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
 			<key>Default</key>
 			<string>___VARIABLE_moduleName___</string>
 			<key>Identifier</key>
@@ -44,34 +46,8 @@
 			<key>Type</key>
 			<string>static</string>
 		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>withoutXIB</string>
-			<key>Name</key>
-			<string>without XIB</string>
-			<key>Description</key>
-			<string>without XIB</string>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>Default</key>
-			<string>false</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>InputOutput</string>
-			<key>Name</key>
-			<string>Divide Interactor protocol (Input &amp; Output)</string>
-			<key>Description</key>
-			<string>Divide Interactor protocol (Input &amp; Output)</string>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>Default</key>
-			<string>false</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
 	</array>
+	<key>Concrete</key>
+	<true/>
 </dict>
 </plist>
